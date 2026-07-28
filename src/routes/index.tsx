@@ -79,6 +79,10 @@ function Index() {
           className="absolute inset-0 h-full w-full object-cover opacity-70 dark:opacity-25"
         />
         <div className="absolute inset-0" style={{ backgroundImage: "var(--gradient-hero)" }} aria-hidden="true" />
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/20 dark:from-background dark:via-background/85 dark:to-background/40"
+          aria-hidden="true"
+        />
         <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-5 pb-24 pt-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:pb-32 lg:pt-28">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 px-4 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
