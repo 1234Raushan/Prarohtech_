@@ -9,7 +9,10 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CareersRouteImport } from './routes/careers'
@@ -17,9 +20,24 @@ import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PortfolioRoute = PortfolioRouteImport.update({
@@ -60,7 +78,10 @@ export interface FileRoutesByFullPath {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/portfolio': typeof PortfolioRoute
+  '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -69,7 +90,10 @@ export interface FileRoutesByTo {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/portfolio': typeof PortfolioRoute
+  '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -79,7 +103,10 @@ export interface FileRoutesById {
   '/careers': typeof CareersRoute
   '/contact': typeof ContactRoute
   '/portfolio': typeof PortfolioRoute
+  '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -90,7 +117,10 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/portfolio'
+    | '/privacy'
     | '/services'
+    | '/sitemap.xml'
+    | '/terms'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -99,7 +129,10 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/portfolio'
+    | '/privacy'
     | '/services'
+    | '/sitemap.xml'
+    | '/terms'
   id:
     | '__root__'
     | '/'
@@ -108,7 +141,10 @@ export interface FileRouteTypes {
     | '/careers'
     | '/contact'
     | '/portfolio'
+    | '/privacy'
     | '/services'
+    | '/sitemap.xml'
+    | '/terms'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -118,16 +154,40 @@ export interface RootRouteChildren {
   CareersRoute: typeof CareersRoute
   ContactRoute: typeof ContactRoute
   PortfolioRoute: typeof PortfolioRoute
+  PrivacyRoute: typeof PrivacyRoute
   ServicesRoute: typeof ServicesRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TermsRoute: typeof TermsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services': {
       id: '/services'
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/portfolio': {
@@ -182,7 +242,10 @@ const rootRouteChildren: RootRouteChildren = {
   CareersRoute: CareersRoute,
   ContactRoute: ContactRoute,
   PortfolioRoute: PortfolioRoute,
+  PrivacyRoute: PrivacyRoute,
   ServicesRoute: ServicesRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
