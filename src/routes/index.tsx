@@ -313,14 +313,8 @@ function Index() {
 
       {/* CTA */}
       <Section>
-        <Reveal
-          className="overflow-hidden rounded-3xl p-10 text-center sm:p-16"
-          // eslint-disable-next-line react/no-unknown-property
-        >
-          <div
-            className="rounded-3xl p-10 sm:p-16"
-            style={{ backgroundImage: "var(--gradient-brand)" }}
-          >
+        <Reveal className="text-center">
+          <div className="rounded-3xl p-10 sm:p-16" style={{ backgroundImage: "var(--gradient-brand)" }}>
             <h2 className="font-display text-3xl font-semibold text-primary-foreground sm:text-4xl">
               Let&apos;s scope your next platform
             </h2>
