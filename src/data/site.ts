@@ -16,8 +16,8 @@ export const company = {
   name: "PrarohTech",
   tagline: "Engineering growth through software, AI and cloud.",
   email: "hello@prarohtech.com",
-  phone: "+91 98765 43210",
-  address: "4th Floor, Tech Park One, Baner Road, Pune, Maharashtra 411045, India",
+  phone: "+91 8825164575",
+  address: "Shiv Shakti Enclave, Gali No. 7,Gali No. 07, Gautam Buddha Nagar, Uttar Pradesh – 201305, India",
   social: [
     { label: "LinkedIn", href: "https://www.linkedin.com/" },
     { label: "X", href: "https://x.com/" },

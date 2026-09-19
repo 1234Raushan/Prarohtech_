@@ -120,7 +120,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           description:
             "Technology company specialising in software development, AI, cloud, ERP and digital transformation.",
           email: "hello@prarohtech.com",
-          telephone: "+91 98765 43210",
+          telephone: "+91 8825164575",
           address: {
             "@type": "PostalAddress",
             streetAddress: "4th Floor, Tech Park One, Baner Road",
