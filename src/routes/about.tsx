@@ -2,12 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Compass, Target, HeartHandshake, ShieldCheck, ArrowRight } from "lucide-react";
 import { Section, SectionHeading } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
-import { Counter } from "@/components/site/Counter";
-import { stats } from "@/data/site";
 
 const TITLE = "About PrarohTech — Our Story, Vision and Team";
 const DESCRIPTION =
-  "Meet PrarohTech: a 60-person product engineering company delivering software, AI and cloud platforms since 2014. Our vision, mission, values and team.";
+  "Learn about PrarohTech, a growing technology services company focused on practical software, web, AI and cloud solutions for businesses.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -17,6 +15,8 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:url", content: "/about" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),
@@ -27,16 +27,14 @@ const values = [
   { icon: ShieldCheck, title: "Integrity", text: "We tell you what we would do with our own money, even when it costs us the sale." },
   { icon: Target, title: "Craft", text: "Readable code, tested paths, documented decisions. Quality is a schedule feature." },
   { icon: Compass, title: "Ownership", text: "We take responsibility for outcomes, not just deliverables." },
-  { icon: HeartHandshake, title: "Partnership", text: "Long horizons over quick wins — most clients stay with us for years." },
+  { icon: HeartHandshake, title: "Partnership", text: "Open communication and shared priorities guide how we work together." },
 ];
 
-const team = [
-  { name: "Rahul Deshpande", role: "Founder & CEO", bio: "18 years in enterprise software; previously led platform engineering at a global bank." },
-  { name: "Sana Qureshi", role: "Head of Engineering", bio: "Architect for .NET and Azure programmes across fintech and manufacturing." },
-  { name: "Kevin Alvarez", role: "Director of AI", bio: "Applied ML lead focused on retrieval systems, evaluation and safe deployment." },
-  { name: "Neha Kulkarni", role: "Head of Design", bio: "Design systems and research practice for complex enterprise workflows." },
-  { name: "Arjun Iyer", role: "Cloud Practice Lead", bio: "Kubernetes, FinOps and migration programmes on Azure and AWS." },
-  { name: "Fatima Sheikh", role: "Delivery Director", bio: "Runs squad health, governance and client communication across accounts." },
+const focusAreas = [
+  { title: "Understand", text: "Start with the business need, the people involved and the systems already in place." },
+  { title: "Simplify", text: "Choose practical technology and a scope that can be understood, tested and maintained." },
+  { title: "Build", text: "Develop in clear stages with regular reviews and visible progress." },
+  { title: "Support", text: "Provide options for maintenance, improvement and technical guidance after launch." },
 ];
 
 function About() {
@@ -46,25 +44,18 @@ function About() {
         <Reveal className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">About us</p>
           <h1 className="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
-            Built to be the last engineering partner you need
+            Practical technology for growing businesses
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            PrarohTech started in 2014 with three engineers and one belief: enterprise software does not have to be slow,
-            ugly or fragile. Twelve years later we are 60 specialists delivering platforms that run lending desks,
-            factories, hospitals and logistics networks.
+            PrarohTech is a growing technology services company focused on building practical software, web, AI and cloud solutions for businesses.
           </p>
         </Reveal>
         <Reveal delay={100}>
-          <dl className="mt-14 grid grid-cols-2 gap-6 sm:grid-cols-4">
-            {stats.map((s) => (
-              <div key={s.label} className="surface-card p-6">
-                <dd className="font-display text-3xl font-semibold">
-                  <Counter value={s.value} suffix={s.suffix} />
-                </dd>
-                <dt className="mt-2 text-sm text-muted-foreground">{s.label}</dt>
-              </div>
-            ))}
-          </dl>
+          <div className="mt-14 surface-card p-6">
+            <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Custom software, web applications, AI automation, cloud solutions and IT consulting designed around your business needs.
+            </p>
+          </div>
         </Reveal>
       </Section>
 
@@ -101,23 +92,13 @@ function About() {
       </Section>
 
       <Section className="bg-secondary/40">
-        <SectionHeading eyebrow="Leadership" title="The people accountable for your delivery" />
-        <ul className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {team.map((m, i) => (
-            <Reveal as="li" key={m.name} delay={i * 70} className="surface-card p-6">
-              <div
-                className="grid h-12 w-12 place-items-center rounded-full font-display text-sm font-semibold text-primary-foreground"
-                style={{ backgroundImage: "var(--gradient-brand)" }}
-                aria-hidden="true"
-              >
-                {m.name
-                  .split(" ")
-                  .map((n) => n[0])
-                  .join("")}
-              </div>
-              <h3 className="mt-4 text-lg font-semibold">{m.name}</h3>
-              <p className="text-sm text-brand">{m.role}</p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.bio}</p>
+        <SectionHeading eyebrow="Our approach" title="Focused on useful, maintainable solutions" />
+        <ul className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {focusAreas.map((item, i) => (
+            <Reveal as="li" key={item.title} delay={i * 70} className="surface-card p-6">
+              <span className="font-display text-sm font-semibold text-brand">0{i + 1}</span>
+              <h3 className="mt-4 text-lg font-semibold">{item.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
             </Reveal>
           ))}
         </ul>
@@ -125,9 +106,9 @@ function About() {
 
       <Section>
         <SectionHeading
-          eyebrow="Why clients trust us"
-          title="Certifications, governance and a decade of references"
-          description="ISO 27001-aligned processes, Microsoft and AWS partner accreditation, secure SDLC, and named references in every sector we serve."
+          eyebrow="Start a conversation"
+          title="Tell us what your business needs"
+          description="We can discuss your goals, current systems and the practical options for moving forward."
         />
         <Reveal className="mt-10 text-center">
           <Link

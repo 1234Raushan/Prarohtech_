@@ -6,7 +6,7 @@ import { services, processSteps } from "@/data/site";
 
 const TITLE = "Services — Software, AI, Cloud, ERP | PrarohTech";
 const DESCRIPTION =
-  "Custom software, web and mobile development, AI & machine learning, cloud, ERP, UI/UX, APIs, business automation and IT consulting from PrarohTech.";
+  "Custom software, web applications, .NET and Angular development, AI automation, ERP, cloud, DevOps, QA, support and IT consulting from PrarohTech.";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -16,6 +16,8 @@ export const Route = createFileRoute("/services")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:url", content: "/services" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/services" }],
     scripts: [
@@ -47,8 +49,8 @@ function Services() {
             Ten capabilities. One accountable team.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Engage us for a single discipline or an end-to-end programme. Either way you get senior engineers, a fixed
-            delivery cadence and code you fully own.
+             Choose support for a focused need or a broader delivery programme. We shape the approach around your goals,
+             current systems and preferred way of working.
           </p>
         </Reveal>
       </Section>
