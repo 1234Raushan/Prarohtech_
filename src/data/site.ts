@@ -143,11 +143,11 @@ export const industries = [
   "Energy & Utilities",
 ];
 
-export const stats = [
-  { value: 180, suffix: "+", label: "Projects delivered" },
-  { value: 12, suffix: "+", label: "Years of engineering" },
-  { value: 60, suffix: "+", label: "Specialists on staff" },
-  { value: 98, suffix: "%", label: "Client retention" },
+const stats = [
+  { value: "Custom", label: "Software Solutions" },
+  { value: "AI", label: "Business Automation" },
+  { value: ".NET", label: "Development Expertise" },
+  { value: "Cloud", label: "Modern Infrastructure" },
 ];
 
 export const testimonials = [
