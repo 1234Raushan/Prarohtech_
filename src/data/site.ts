@@ -1,29 +1,23 @@
 import {
   Code2,
   Globe,
-  Smartphone,
   BrainCircuit,
   Cloud,
   Boxes,
-  PenTool,
   Plug,
-  Workflow,
   Lightbulb,
+  Users,
+  TestTube2,
+  LifeBuoy,
   type LucideIcon,
 } from "lucide-react";
 
 export const company = {
   name: "PrarohTech",
-  tagline: "Engineering growth through software, AI and cloud.",
-  email: "hello@prarohtech.com",
-  phone: "+91 8825164575",
+  tagline: "Software, AI & Cloud Solutions",
+  website: "https://prarohtech.com",
+  email: "info@prarohtech.com",
   address: "Shiv Shakti Enclave, Gali No. 7,Gali No. 07, Gautam Buddha Nagar, Uttar Pradesh – 201305, India",
-  social: [
-    { label: "LinkedIn", href: "https://www.linkedin.com/" },
-    { label: "X", href: "https://x.com/" },
-    { label: "GitHub", href: "https://github.com/" },
-    { label: "YouTube", href: "https://youtube.com/" },
-  ],
 };
 
 export type Service = {
@@ -38,72 +32,72 @@ export const services: Service[] = [
   {
     slug: "custom-software",
     title: "Custom Software Development",
-    summary: "Product-grade platforms built for scale, security and long-term maintainability.",
+    summary: "Purpose-built software designed around your workflows, goals and operating needs.",
     icon: Code2,
-    points: ["Domain-driven architecture", "Modernisation of legacy systems", "Dedicated delivery pods"],
+    points: ["Business application development", "Legacy software modernisation", "Scalable solution architecture"],
   },
   {
     slug: "web-development",
-    title: "Web Development",
-    summary: "Fast, accessible, SEO-first web applications and marketing platforms.",
+    title: "Web Application Development",
+    summary: "Responsive, accessible web applications built for reliable day-to-day use.",
     icon: Globe,
-    points: ["Angular & React front-ends", "ASP.NET Core APIs", "Core Web Vitals tuning"],
+    points: ["Responsive web applications", "Angular and React interfaces", "Performance and accessibility"],
   },
   {
-    slug: "mobile-apps",
-    title: "Mobile App Development",
-    summary: "Native and cross-platform apps with polished, App-Store-ready experiences.",
-    icon: Smartphone,
-    points: ["iOS, Android & Flutter", "Offline-first sync", "Release automation"],
+    slug: "dotnet-angular",
+    title: ".NET / Angular Development",
+    summary: "Modern business systems using C#, ASP.NET Core and Angular.",
+    icon: Code2,
+    points: ["ASP.NET Core applications", "Angular front ends", "SQL Server integration"],
   },
   {
-    slug: "ai-ml",
-    title: "AI & Machine Learning",
-    summary: "Applied AI that ships: copilots, document intelligence and predictive models.",
+    slug: "ai-automation",
+    title: "AI & Business Automation",
+    summary: "Practical AI and workflow automation for repetitive, information-heavy processes.",
     icon: BrainCircuit,
-    points: ["RAG & LLM copilots", "Forecasting & scoring", "MLOps and evaluation"],
-  },
-  {
-    slug: "cloud",
-    title: "Cloud Solutions",
-    summary: "Azure and AWS landing zones, migrations and cost-optimised operations.",
-    icon: Cloud,
-    points: ["Cloud migration", "Kubernetes & serverless", "FinOps and observability"],
+    points: ["AI and LLM integration", "Document and data workflows", "Process automation"],
   },
   {
     slug: "erp",
-    title: "ERP Development",
-    summary: "Finance, inventory, HR and manufacturing modules tailored to your workflows.",
+    title: "ERP & Business Applications",
+    summary: "Connected applications for finance, inventory, operations and internal teams.",
     icon: Boxes,
-    points: ["Custom ERP builds", "Dynamics & SAP integrations", "Role-based governance"],
+    points: ["Custom business modules", "Workflow integration", "Role-based access"],
   },
   {
-    slug: "ui-ux",
-    title: "UI/UX Design",
-    summary: "Research-led product design systems that make complex software feel effortless.",
-    icon: PenTool,
-    points: ["Discovery & journey mapping", "Design systems", "Usability testing"],
-  },
-  {
-    slug: "api",
-    title: "API Development",
-    summary: "Secure, documented, versioned APIs that power partners and internal teams.",
-    icon: Plug,
-    points: ["REST & GraphQL", "OAuth2 and API gateways", "Contract-first delivery"],
-  },
-  {
-    slug: "automation",
-    title: "Business Automation",
-    summary: "Remove manual work with orchestrated workflows and intelligent document flows.",
-    icon: Workflow,
-    points: ["RPA & workflow engines", "Approval automation", "Integration hubs"],
+    slug: "cloud-devops",
+    title: "Cloud & DevOps",
+    summary: "Cloud infrastructure and delivery practices that support reliable software releases.",
+    icon: Cloud,
+    points: ["Azure cloud solutions", "Docker and Kubernetes", "CI/CD and monitoring"],
   },
   {
     slug: "consulting",
     title: "IT Consulting",
-    summary: "Technology strategy, audits and roadmaps grounded in commercial outcomes.",
+    summary: "Practical technical guidance for software decisions, planning and improvement.",
     icon: Lightbulb,
-    points: ["Architecture reviews", "Security & compliance", "Team enablement"],
+    points: ["Technology assessment", "Architecture planning", "Modernisation roadmaps"],
+  },
+  {
+    slug: "dedicated-developers",
+    title: "Dedicated Developers / Staff Augmentation",
+    summary: "Flexible engineering support aligned with your team, priorities and delivery process.",
+    icon: Users,
+    points: ["Dedicated development support", "Team extension", "Flexible engagement models"],
+  },
+  {
+    slug: "qa-testing",
+    title: "QA & Software Testing",
+    summary: "Structured testing to improve software quality, stability and release confidence.",
+    icon: TestTube2,
+    points: ["Functional testing", "Test automation", "Performance and regression testing"],
+  },
+  {
+    slug: "maintenance-support",
+    title: "Software Maintenance & Support",
+    summary: "Ongoing technical support for updates, issue resolution and software improvement.",
+    icon: LifeBuoy,
+    points: ["Application maintenance", "Issue investigation", "Enhancements and updates"],
   },
 ];
 
@@ -116,20 +110,16 @@ export const processSteps = [
 ];
 
 export const technologies = [
+  "C#",
+  ".NET / ASP.NET Core",
   "Angular",
   "React",
-  ".NET Core",
-  "Node.js",
-  "Python",
   "SQL Server",
-  "PostgreSQL",
   "Azure",
-  "AWS",
   "Docker",
   "Kubernetes",
-  "Flutter",
-  "OpenAI",
-  "Power BI",
+  "REST APIs",
+  "AI/LLM Integration",
 ];
 
 export const industries = [
@@ -143,38 +133,10 @@ export const industries = [
   "Energy & Utilities",
 ];
 
-export const stats = [
-  { value: 180, suffix: "+", label: "Projects delivered" },
-  { value: 12, suffix: "+", label: "Years of engineering" },
-  { value: 60, suffix: "+", label: "Specialists on staff" },
-  { value: 98, suffix: "%", label: "Client retention" },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "PrarohTech rebuilt our core lending platform in nine months. Throughput tripled and our release cycle went from quarterly to weekly.",
-    name: "Ananya Rao",
-    role: "CTO, Northbridge Finance",
-  },
-  {
-    quote:
-      "Their AI team shipped a document-processing copilot that removed 4,000 manual hours a year. Measured, pragmatic, no hype.",
-    name: "Marcus Lehmann",
-    role: "COO, Vantage Logistics",
-  },
-  {
-    quote:
-      "The ERP rollout across six plants was the smoothest enterprise programme we have run. Communication was flawless.",
-    name: "Priya Menon",
-    role: "VP Operations, Suryan Industries",
-  },
-];
-
 export const faqs = [
   {
     q: "How do engagements typically start?",
-    a: "With a paid discovery sprint of one to three weeks. You leave with an architecture outline, a prototype and a fixed delivery plan — whether or not you continue with us.",
+    a: "We begin by understanding your business needs, current systems and priorities. From there, we can define a suitable scope and delivery approach.",
   },
   {
     q: "Do you work fixed-price or time-and-materials?",
@@ -186,7 +148,7 @@ export const faqs = [
   },
   {
     q: "How do you handle security and compliance?",
-    a: "Secure SDLC, code scanning, least-privilege cloud access and support for SOC 2, ISO 27001, HIPAA and GDPR programmes.",
+    a: "Security needs are discussed during planning and reflected in the architecture, access controls, testing and delivery process for each engagement.",
   },
   {
     q: "Can you take over an existing codebase?",
@@ -249,62 +211,45 @@ export const posts = [
 
 export const projects = [
   {
-    title: "Northbridge Lending Platform",
+    title: "Business Operations Portal",
     category: "Software",
-    result: "3× loan throughput, weekly releases",
-    stack: ["Angular", ".NET Core", "Azure"],
+    type: "Demo Project",
+    description: "A sample workflow portal for managing requests, approvals and operational records.",
+    stack: ["Angular", "ASP.NET Core", "Azure"],
   },
   {
-    title: "Vantage Freight Copilot",
+    title: "Document Knowledge Assistant",
     category: "AI",
-    result: "4,000 manual hours removed per year",
-    stack: ["Python", "OpenAI", "PostgreSQL"],
+    type: "Proof of Concept",
+    description: "An internal concept for finding answers across approved business documents with source references.",
+    stack: ["AI/LLM", "REST APIs", "SQL Server"],
   },
   {
-    title: "Suryan Manufacturing ERP",
+    title: "Inventory & Purchasing Workspace",
     category: "ERP",
-    result: "Six plants unified on one system",
-    stack: [".NET Core", "SQL Server", "Power BI"],
+    type: "Sample Solution",
+    description: "A sample business application for inventory, purchase requests and supplier records.",
+    stack: ["ASP.NET Core", "SQL Server", "Angular"],
   },
   {
-    title: "Curelink Patient App",
-    category: "Mobile",
-    result: "4.8★ rating, 120k installs",
-    stack: ["Flutter", "Node.js", "AWS"],
-  },
-  {
-    title: "Aurora Retail Commerce",
+    title: "Service Request Dashboard",
     category: "Web",
-    result: "62% faster LCP, +28% conversion",
-    stack: ["React", "Node.js", "Azure"],
+    type: "Internal Project",
+    description: "An internal dashboard concept for triaging service requests and tracking progress.",
+    stack: ["React", "REST APIs", "Azure"],
   },
   {
-    title: "Helios Grid Analytics",
+    title: "Automated Invoice Review",
+    category: "Automation",
+    type: "Proof of Concept",
+    description: "A workflow concept for extracting invoice details and routing exceptions for review.",
+    stack: ["AI/LLM", ".NET", "SQL Server"],
+  },
+  {
+    title: "Cloud Deployment Blueprint",
     category: "Cloud",
-    result: "Real-time telemetry for 9,000 assets",
-    stack: ["Kubernetes", "Python", "AWS"],
+    type: "Internal Project",
+    description: "A reusable reference setup for containerised applications, deployment and monitoring.",
+    stack: ["Azure", "Docker", "Kubernetes"],
   },
-  {
-    title: "Meridian Claims Automation",
-    category: "AI",
-    result: "Claim handling time down 57%",
-    stack: ["Python", "Azure", "SQL Server"],
-  },
-  {
-    title: "Beacon Campus Portal",
-    category: "Web",
-    result: "40k students on a single portal",
-    stack: ["Angular", ".NET Core", "SQL Server"],
-  },
-];
-
-export const clients = [
-  "Northbridge",
-  "Vantage",
-  "Suryan",
-  "Curelink",
-  "Aurora",
-  "Helios",
-  "Meridian",
-  "Beacon",
 ];

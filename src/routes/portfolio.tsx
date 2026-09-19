@@ -5,9 +5,9 @@ import { Reveal } from "@/components/site/Reveal";
 import { projects } from "@/data/site";
 import { cn } from "@/lib/utils";
 
-const TITLE = "Portfolio — Selected Projects | PrarohTech";
+const TITLE = "Demo Projects & Sample Solutions | PrarohTech";
 const DESCRIPTION =
-  "Explore PrarohTech case studies across software, AI, ERP, mobile, web and cloud — with the measurable results each project delivered.";
+  "Explore clearly labeled demo projects, proofs of concept, sample solutions and internal projects from PrarohTech.";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -17,6 +17,8 @@ export const Route = createFileRoute("/portfolio")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:url", content: "/portfolio" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/portfolio" }],
   }),
@@ -34,10 +36,10 @@ function Portfolio() {
         <Reveal className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">Portfolio</p>
           <h1 className="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
-            Work that shipped, and the numbers behind it
+            Demo projects and sample solutions
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            A selection of platforms we have designed, built and operate today. Full case studies available on request.
+            Concepts that demonstrate how we approach common business needs. These are not presented as completed client work.
           </p>
         </Reveal>
       </Section>
@@ -76,7 +78,8 @@ function Portfolio() {
               </div>
               <div className="p-6">
                 <h2 className="text-lg font-semibold">{p.title}</h2>
-                <p className="mt-2 text-sm text-brand">{p.result}</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand">{p.type}</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.description}</p>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {p.stack.map((t) => (
                     <li key={t} className="rounded-full bg-secondary px-3 py-1 text-xs text-muted-foreground">

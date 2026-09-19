@@ -2,18 +2,14 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Check, ShieldCheck, Gauge, Users, Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-abstract.jpg";
 import { Reveal } from "@/components/site/Reveal";
-import { Counter } from "@/components/site/Counter";
 import { Section, SectionHeading } from "@/components/site/Section";
 import {
   services,
   processSteps,
   technologies,
   industries,
-  stats,
-  testimonials,
   faqs,
   posts,
-  clients,
 } from "@/data/site";
 import {
   Accordion,
@@ -22,9 +18,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const TITLE = "PrarohTech — Software, AI & Cloud Engineering Partner";
+const TITLE = "PrarohTech — Software, AI & Cloud Solutions";
 const DESCRIPTION =
-  "PrarohTech builds custom software, AI solutions, cloud platforms and ERP systems that help ambitious companies grow. Plan, design, develop, deploy, support.";
+  "PrarohTech builds practical digital solutions for growing businesses, including custom software, web applications, AI automation, cloud solutions and IT consulting.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,6 +30,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:url", content: "/" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
@@ -43,30 +41,30 @@ export const Route = createFileRoute("/")({
 const differentiators = [
   {
     icon: ShieldCheck,
-    title: "Senior engineers only",
-    text: "Every squad is led by architects with a decade of production delivery — no learning on your budget.",
+    title: "Practical by design",
+    text: "Solutions are shaped around real business needs, clear priorities and maintainable technology.",
   },
   {
     icon: Gauge,
-    title: "Ship in weeks, not quarters",
-    text: "Two-week sprints, working software every demo, and a roadmap you can hold us to.",
+    title: "Clear delivery approach",
+    text: "Work is organised into transparent stages with regular reviews and visible progress.",
   },
   {
     icon: Users,
     title: "Business outcomes first",
-    text: "We measure success in throughput, cost saved and revenue enabled — not story points.",
+    text: "Technology decisions start with the problem your business needs to solve.",
   },
   {
     icon: Sparkles,
-    title: "Built to be handed over",
-    text: "Documented architecture, tests and CI/CD so your team can own the platform from day one.",
+    title: "Built for ownership",
+    text: "Clear architecture, documentation and testing support long-term maintainability.",
   },
 ];
 
 function Index() {
   return (
     <>
-      <h1 className="sr-only">PrarohTech — software development, AI, cloud and digital transformation</h1>
+      <h1 className="sr-only">PrarohTech — Software, AI &amp; Cloud Solutions</h1>
 
       {/* Hero */}
       <section className="relative overflow-hidden">
@@ -87,16 +85,16 @@ function Index() {
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 px-4 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
               <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden="true" />
-              Trusted engineering partner since 2014
+              PrarohTech
             </span>
             <p className="mt-6 font-display text-4xl font-semibold leading-[1.08] sm:text-5xl lg:text-6xl">
-              Software that moves
+              Software, AI &amp; Cloud
               <br />
-              <span className="gradient-text">your business forward</span>
+              <span className="gradient-text">Solutions</span>
             </p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              We design, build and operate custom software, AI systems, cloud platforms and ERP solutions for companies
-              that cannot afford to guess.
+              We build practical digital solutions for growing businesses.
+              Custom software, web applications, AI automation, cloud solutions and IT consulting designed around your business needs.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Link
@@ -112,17 +110,11 @@ function Index() {
                 Contact Us
               </Link>
             </div>
-            <dl className="mt-12 grid max-w-lg grid-cols-2 gap-6 sm:grid-cols-4">
-              {stats.map((s) => (
-                <div key={s.label}>
-                  <dt className="sr-only">{s.label}</dt>
-                  <dd className="font-display text-2xl font-semibold">
-                    <Counter value={s.value} suffix={s.suffix} />
-                  </dd>
-                  <p className="mt-1 text-xs text-muted-foreground">{s.label}</p>
-                </div>
+            <ul className="mt-12 grid max-w-lg grid-cols-2 gap-6 sm:grid-cols-4">
+              {["Software", "Web Apps", "AI Automation", "Cloud"].map((item) => (
+                <li key={item} className="font-display text-sm font-semibold text-muted-foreground">{item}</li>
               ))}
-            </dl>
+            </ul>
           </Reveal>
 
           <Reveal delay={120} className="hidden lg:block">
@@ -130,10 +122,10 @@ function Index() {
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">Engagement snapshot</p>
               <ul className="mt-5 space-y-4">
                 {[
-                  "Discovery sprint in 2 weeks",
-                  "Architecture and costed roadmap",
-                  "Dedicated squad within 30 days",
-                  "SLA-backed support after launch",
+                  "Discovery and requirements",
+                  "Architecture and delivery planning",
+                  "Iterative development and reviews",
+                  "Maintenance and support options",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm">
                     <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
@@ -142,30 +134,19 @@ function Index() {
                 ))}
               </ul>
               <div className="mt-6 rounded-xl bg-secondary p-4 text-sm text-muted-foreground">
-                “PrarohTech felt like our own team, only faster.”
-                <span className="mt-2 block text-xs font-medium text-foreground">CTO, Northbridge Finance</span>
+                Technology choices and delivery plans shaped around your business needs.
               </div>
             </div>
           </Reveal>
         </div>
       </section>
 
-      {/* Trusted by */}
+      {/* Partnership statement */}
       <Section className="py-12 sm:py-14">
         <Reveal>
           <p className="text-center text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
-            Trusted by teams across fintech, healthcare, manufacturing and logistics
+            Building partnerships with businesses and teams looking for reliable technology solutions.
           </p>
-          <ul className="mt-8 grid grid-cols-2 gap-x-6 gap-y-5 sm:grid-cols-4 lg:grid-cols-8">
-            {clients.map((c) => (
-              <li
-                key={c}
-                className="text-center font-display text-base font-semibold text-muted-foreground/70 transition-colors hover:text-foreground"
-              >
-                {c}
-              </li>
-            ))}
-          </ul>
         </Reveal>
       </Section>
 
@@ -175,8 +156,8 @@ function Index() {
           <SectionHeading
             align="left"
             eyebrow="Who we are"
-            title="An engineering partner, not a body shop"
-            description="PrarohTech is a 60-person product engineering company. We combine strategy, design and deep .NET, Angular, cloud and AI expertise to deliver systems that run critical operations for our clients — and keep running long after we hand them over."
+            title="A practical technology partner"
+            description="PrarohTech is a growing technology services company focused on building practical software, web, AI and cloud solutions for businesses."
           />
           <Reveal delay={100} className="grid gap-4 sm:grid-cols-2">
             {differentiators.map((d) => (
@@ -221,7 +202,7 @@ function Index() {
         <SectionHeading
           eyebrow="How we work"
           title="Plan → Design → Develop → Deploy → Support"
-          description="A delivery model refined over 180 projects, with a clear owner and exit criteria at every stage."
+          description="A clear delivery model with defined goals, regular reviews and practical handover at every stage."
         />
         <ol className="mt-14 grid gap-5 md:grid-cols-3 lg:grid-cols-5">
           {processSteps.map((step, i) => (
@@ -264,20 +245,14 @@ function Index() {
         </div>
       </Section>
 
-      {/* Testimonials */}
+      {/* Partnership */}
       <Section className="bg-secondary/40">
-        <SectionHeading eyebrow="Client voices" title="What our clients say" />
-        <ul className="mt-14 grid gap-5 lg:grid-cols-3">
-          {testimonials.map((t, i) => (
-            <Reveal as="li" key={t.name} delay={i * 90} className="surface-card flex flex-col p-6">
-              <p className="flex-1 text-sm leading-relaxed">“{t.quote}”</p>
-              <div className="mt-6">
-                <p className="text-sm font-semibold">{t.name}</p>
-                <p className="text-xs text-muted-foreground">{t.role}</p>
-              </div>
-            </Reveal>
-          ))}
-        </ul>
+        <SectionHeading eyebrow="Working together" title="Technology support built around your needs" />
+        <Reveal className="mx-auto mt-10 max-w-3xl text-center">
+          <p className="text-lg leading-relaxed text-muted-foreground">
+            Building partnerships with businesses and teams looking for reliable technology solutions.
+          </p>
+        </Reveal>
       </Section>
 
       {/* FAQ */}
@@ -323,8 +298,7 @@ function Index() {
               Let&apos;s scope your next platform
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-primary-foreground/85">
-              Tell us the outcome you need. We will come back within one business day with an approach, a timeline and a
-              realistic budget.
+              Tell us what you need to build or improve. We will discuss the requirements and a practical way forward.
             </p>
             <Link
               to="/contact"
