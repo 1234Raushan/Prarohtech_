@@ -64,13 +64,7 @@ const differentiators = [
 function Index() {
   return (
     <>
-<<<<<<< HEAD
-      <h1 className="sr-only">
-        PrarohTech — software development, AI, cloud and business technology solutions
-      </h1>
-=======
       <h1 className="sr-only">PrarohTech — Software, AI &amp; Cloud Solutions</h1>
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
 
       {/* Hero */}
       <section className="relative overflow-hidden">
@@ -98,11 +92,7 @@ function Index() {
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 px-4 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur">
               <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden="true" />
-<<<<<<< HEAD
-              Software • AI • Cloud Solutions
-=======
               PrarohTech
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
             </span>
 
             <p className="mt-6 font-display text-4xl font-semibold leading-[1.08] sm:text-5xl lg:text-6xl">
@@ -112,14 +102,8 @@ function Index() {
             </p>
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-<<<<<<< HEAD
-              We design and build custom software, web applications, AI-enabled
-              solutions, cloud platforms and business applications for growing
-              businesses.
-=======
               We build practical digital solutions for growing businesses.
               Custom software, web applications, AI automation, cloud solutions and IT consulting designed around your business needs.
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
             </p>
 
             <div className="mt-9 flex flex-wrap gap-3">
@@ -138,33 +122,11 @@ function Index() {
                 Contact Us
               </Link>
             </div>
-<<<<<<< HEAD
-
-            {/* Capability highlights instead of fabricated statistics */}
-            <div className="mt-12 grid max-w-lg grid-cols-2 gap-6 sm:grid-cols-4">
-              {[
-                { value: "Custom", label: "Software Solutions" },
-                { value: "AI", label: "Business Automation" },
-                { value: ".NET", label: "Development Expertise" },
-                { value: "Cloud", label: "Technology Solutions" },
-              ].map((item) => (
-                <div key={item.label}>
-                  <p className="font-display text-2xl font-semibold">
-                    {item.value}
-                  </p>
-                  <p className="mt-1 text-xs text-muted-foreground">
-                    {item.label}
-                  </p>
-                </div>
-              ))}
-            </div>
-=======
             <ul className="mt-12 grid max-w-lg grid-cols-2 gap-6 sm:grid-cols-4">
               {["Software", "Web Apps", "AI Automation", "Cloud"].map((item) => (
                 <li key={item} className="font-display text-sm font-semibold text-muted-foreground">{item}</li>
               ))}
             </ul>
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
           </Reveal>
 
           <Reveal delay={120} className="hidden lg:block">
@@ -175,17 +137,10 @@ function Index() {
 
               <ul className="mt-5 space-y-4">
                 {[
-<<<<<<< HEAD
-                  "Understand your business requirements",
-                  "Design a practical technical approach",
-                  "Build and test the solution",
-                  "Deploy and provide ongoing support",
-=======
                   "Discovery and requirements",
                   "Architecture and delivery planning",
                   "Iterative development and reviews",
                   "Maintenance and support options",
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
                 ].map((item) => (
                   <li
                     key={item}
@@ -201,49 +156,19 @@ function Index() {
               </ul>
 
               <div className="mt-6 rounded-xl bg-secondary p-4 text-sm text-muted-foreground">
-<<<<<<< HEAD
-                We focus on clear communication, practical engineering and
-                solutions built around your business needs.
-=======
                 Technology choices and delivery plans shaped around your business needs.
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
               </div>
             </div>
           </Reveal>
         </div>
       </section>
 
-<<<<<<< HEAD
-      {/* Business positioning */}
-      <Section className="py-12 sm:py-14">
-        <Reveal>
-          <p className="text-center text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
-            Technology solutions for growing businesses
-          </p>
-
-          <div className="mx-auto mt-8 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4">
-            {[
-              "Software Development",
-              "AI & Automation",
-              "Cloud Solutions",
-              "IT Consulting",
-            ].map((item) => (
-              <div
-                key={item}
-                className="rounded-xl border border-border bg-card px-4 py-4 text-center text-sm font-medium text-muted-foreground"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-=======
       {/* Partnership statement */}
       <Section className="py-12 sm:py-14">
         <Reveal>
           <p className="text-center text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
             Building partnerships with businesses and teams looking for reliable technology solutions.
           </p>
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
         </Reveal>
       </Section>
 
@@ -253,13 +178,8 @@ function Index() {
           <SectionHeading
             align="left"
             eyebrow="Who we are"
-<<<<<<< HEAD
-            title="A technology partner for growing businesses"
-            description="PrarohTech is a growing technology services company focused on software development, AI-enabled applications, cloud solutions and business technology. We combine practical engineering with a business-focused approach to build solutions that are reliable, maintainable and ready to grow."
-=======
             title="A practical technology partner"
             description="PrarohTech is a growing technology services company focused on building practical software, web, AI and cloud solutions for businesses."
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
           />
 
           <Reveal
@@ -337,11 +257,7 @@ function Index() {
         <SectionHeading
           eyebrow="How we work"
           title="Plan → Design → Develop → Deploy → Support"
-<<<<<<< HEAD
-          description="A clear and practical delivery process with defined goals, communication and ownership at every stage."
-=======
           description="A clear delivery model with defined goals, regular reviews and practical handover at every stage."
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
         />
 
         <ol className="mt-14 grid gap-5 md:grid-cols-3 lg:grid-cols-5">
@@ -415,8 +331,6 @@ function Index() {
         </div>
       </Section>
 
-<<<<<<< HEAD
-=======
       {/* Partnership */}
       <Section className="bg-secondary/40">
         <SectionHeading eyebrow="Working together" title="Technology support built around your needs" />
@@ -427,7 +341,6 @@ function Index() {
         </Reveal>
       </Section>
 
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
       {/* FAQ */}
       <Section>
         <SectionHeading
@@ -486,9 +399,7 @@ function Index() {
                 {p.excerpt}
               </p>
 
-              <p className="mt-4 text-xs text-muted-foreground">
-                {p.read}
-              </p>
+               <p className="mt-4 text-xs text-muted-foreground">Article topic</p>
             </Reveal>
           ))}
         </ul>
@@ -516,13 +427,7 @@ function Index() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-primary-foreground/85">
-<<<<<<< HEAD
-              Tell us what you are looking to build. We will review your
-              requirements and discuss a practical approach, timeline and
-              budget.
-=======
               Tell us what you need to build or improve. We will discuss the requirements and a practical way forward.
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
             </p>
 
             <Link

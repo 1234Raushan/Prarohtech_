@@ -3,7 +3,7 @@ import { Compass, Target, HeartHandshake, ShieldCheck, ArrowRight } from "lucide
 import { Section, SectionHeading } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 
-const TITLE = "About PrarohTech — Our Story, Vision and Team";
+const TITLE = "About PrarohTech — Practical Technology Solutions";
 const DESCRIPTION =
   "Learn about PrarohTech, a growing technology services company focused on practical software, web, AI and cloud solutions for businesses.";
 
@@ -24,9 +24,9 @@ export const Route = createFileRoute("/about")({
 });
 
 const values = [
-  { icon: ShieldCheck, title: "Integrity", text: "We tell you what we would do with our own money, even when it costs us the sale." },
-  { icon: Target, title: "Craft", text: "Readable code, tested paths, documented decisions. Quality is a schedule feature." },
-  { icon: Compass, title: "Ownership", text: "We take responsibility for outcomes, not just deliverables." },
+  { icon: ShieldCheck, title: "Integrity", text: "Honest guidance and clear communication shape every conversation." },
+  { icon: Target, title: "Craft", text: "Readable code, tested paths and documented decisions support maintainable software." },
+  { icon: Compass, title: "Ownership", text: "Clear responsibilities and thoughtful decisions guide the work." },
   { icon: HeartHandshake, title: "Partnership", text: "Open communication and shared priorities guide how we work together." },
 ];
 
@@ -64,15 +64,14 @@ function About() {
           <Reveal className="surface-card p-8">
             <h2 className="text-2xl font-semibold">Our vision</h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              A world where every growing organisation has access to the same calibre of engineering as the largest
-              technology companies — without the overhead, the theatre or the lock-in.
+              To make practical, maintainable technology more accessible to growing businesses and teams.
             </p>
           </Reveal>
           <Reveal delay={100} className="surface-card p-8">
             <h2 className="text-2xl font-semibold">Our mission</h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              To design, build and operate software that measurably improves how our clients work — delivered
-              transparently, secured by default, and handed over with everything needed to own it.
+              To understand business needs and create useful software, AI and cloud solutions through a clear,
+              collaborative process.
             </p>
           </Reveal>
         </div>

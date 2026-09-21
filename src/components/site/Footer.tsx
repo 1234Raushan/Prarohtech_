@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Globe, Mail, MapPin } from "lucide-react";
 import logo from "@/assets/prarohtech-logo.png";
 import { company, services } from "@/data/site";
 
@@ -23,7 +23,7 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              {company.tagline} We design, build and operate software for ambitious organisations.
+              Practical software, web, AI and cloud solutions designed around business needs.
             </p>
             <ul className="mt-5 space-y-2 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
@@ -33,9 +33,9 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
-                <a className="hover:text-foreground" href={`tel:${company.phone.replace(/\s/g, "")}`}>
-                  {company.phone}
+                <Globe className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+                <a className="hover:text-foreground" href={company.website}>
+                  {company.website.replace("https://", "")}
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -79,41 +79,16 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold">Newsletter</h3>
+            <h3 className="text-sm font-semibold">Stay informed</h3>
             <p className="mt-4 text-sm text-muted-foreground">
-              Engineering notes and delivery playbooks. One email a month, no noise.
+              Read practical notes about software, AI, cloud and business technology on our blog.
             </p>
-            <form
-              className="mt-4 flex flex-col gap-2 sm:flex-row"
-              onSubmit={(e) => {
-                e.preventDefault();
-                (e.currentTarget as HTMLFormElement).reset();
-              }}
+            <Link
+              to="/blog"
+              className="mt-4 inline-flex rounded-full border border-border px-5 py-2.5 text-sm font-semibold transition-colors hover:bg-background"
             >
-              <label className="sr-only" htmlFor="newsletter-email">
-                Email address
-              </label>
-              <input
-                id="newsletter-email"
-                type="email"
-                required
-                placeholder="you@company.com"
-                className="min-w-0 flex-1 rounded-full border border-input bg-background px-4 py-2.5 text-sm outline-none focus-visible:ring-2 focus-visible:ring-ring"
-              />
-              <button
-                type="submit"
-                className="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-brand-foreground transition-transform hover:scale-[1.03]"
-              >
-                Subscribe
-              </button>
-            </form>
-            <div className="mt-6 flex flex-wrap gap-3 text-sm text-muted-foreground">
-              {company.social.map((s) => (
-                <a key={s.label} href={s.href} className="transition-colors hover:text-foreground">
-                  {s.label}
-                </a>
-              ))}
-            </div>
+              Visit the blog
+            </Link>
           </div>
         </div>
 
