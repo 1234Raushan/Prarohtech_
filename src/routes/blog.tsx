@@ -17,6 +17,8 @@ export const Route = createFileRoute("/blog")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:url", content: "/blog" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/blog" }],
   }),
@@ -34,10 +36,10 @@ function Blog() {
         <Reveal className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">Blog</p>
           <h1 className="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
-            Notes from the delivery floor
+             Practical technology notes
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Practical writing from the engineers doing the work — no listicles, no vendor hype.
+            Perspectives on software development, AI, cloud, automation and maintainable business systems.
           </p>
         </Reveal>
       </Section>

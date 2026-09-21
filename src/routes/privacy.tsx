@@ -13,6 +13,8 @@ export const Route = createFileRoute("/privacy")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:url", content: "/privacy" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/privacy" }],
   }),
@@ -32,15 +34,15 @@ function Privacy() {
           <section>
             <h2 className="text-lg font-semibold text-foreground">Information we collect</h2>
             <p className="mt-2">
-              We collect the details you choose to send us through our contact, application and newsletter forms — such
-              as your name, email address, phone number, company and message.
+              We collect the details you choose to send through our contact or application forms, such as your name,
+              email address, company, website and message.
             </p>
           </section>
           <section>
             <h2 className="text-lg font-semibold text-foreground">How we use it</h2>
             <p className="mt-2">
-              We use your information solely to respond to your enquiry, assess job applications, or send the newsletter
-              you requested. We do not sell personal data.
+              We use your information to respond to your enquiry or review an expression of interest. We do not sell
+              personal data.
             </p>
           </section>
           <section>
