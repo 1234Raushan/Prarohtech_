@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://praroh-tech-nexus.lovable.app/sitemap.xml
+Sitemap: https://www.prarohtech.com/sitemap.xml
