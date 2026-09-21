@@ -161,51 +161,39 @@ export const posts = [
     slug: "shipping-ai-copilots",
     title: "Planning dependable AI copilots",
     category: "AI",
-    date: "2026-06-18",
     excerpt:
       "Key considerations for evaluation, retrieval quality, safeguards and maintainability when planning an AI copilot.",
-    read: "8 min read",
   },
   {
     slug: "dotnet-modernisation",
     title: "Planning a .NET modernisation path",
     category: ".NET",
-    date: "2026-05-30",
     excerpt:
       "Ways to assess legacy applications, phase migration work and manage dependencies during modernisation.",
-    read: "10 min read",
   },
   {
     slug: "angular-performance",
     title: "Understanding Angular signals and performance",
     category: "Angular",
-    date: "2026-05-02",
     excerpt: "A practical look at signals, zoneless change detection and state choices for responsive Angular applications.",
-    read: "7 min read",
   },
   {
     slug: "cloud-cost",
     title: "A practical approach to reviewing cloud costs",
     category: "Cloud",
-    date: "2026-04-11",
     excerpt: "Areas to review when assessing cloud usage, including sizing, storage tiers, schedules and monitoring.",
-    read: "6 min read",
   },
   {
     slug: "automation-roi",
     title: "How to pick the first process to automate",
     category: "Business",
-    date: "2026-03-19",
     excerpt: "A simple framework for comparing process volume, variation, effort and business value before automating.",
-    read: "5 min read",
   },
   {
     slug: "design-systems",
     title: "Design systems for enterprise software teams",
     category: "Business",
-    date: "2026-02-27",
     excerpt: "How tokens, governance and adoption practices can support a maintainable design system.",
-    read: "9 min read",
   },
 ];
 

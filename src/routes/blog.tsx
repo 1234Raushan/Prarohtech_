@@ -5,9 +5,9 @@ import { Reveal } from "@/components/site/Reveal";
 import { posts } from "@/data/site";
 import { cn } from "@/lib/utils";
 
-const TITLE = "Blog — AI, .NET, Angular, Cloud & Business | PrarohTech";
+const TITLE = "Technology Topics — AI, .NET, Angular & Cloud | PrarohTech";
 const DESCRIPTION =
-  "Engineering notes from the PrarohTech team on AI systems, .NET modernisation, Angular performance, cloud cost and business automation.";
+  "Topics PrarohTech explores across AI systems, .NET modernisation, Angular, cloud and business automation.";
 
 export const Route = createFileRoute("/blog")({
   head: () => ({
@@ -34,7 +34,7 @@ function Blog() {
     <>
       <Section className="pb-8 pt-16">
         <Reveal className="max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">Blog</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">Topics</p>
           <h1 className="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
              Practical technology notes
           </h1>
@@ -73,10 +73,7 @@ function Blog() {
               <h2 className="mt-3 text-lg font-semibold leading-snug">{p.title}</h2>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{p.excerpt}</p>
               <p className="mt-5 text-xs text-muted-foreground">
-                <time dateTime={p.date}>
-                  {new Date(p.date).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}
-                </time>{" "}
-                · {p.read}
+                 Article topic
               </p>
             </Reveal>
           ))}

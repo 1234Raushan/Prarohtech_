@@ -399,9 +399,7 @@ function Index() {
                 {p.excerpt}
               </p>
 
-              <p className="mt-4 text-xs text-muted-foreground">
-                {p.read}
-              </p>
+               <p className="mt-4 text-xs text-muted-foreground">Article topic</p>
             </Reveal>
           ))}
         </ul>

@@ -3,7 +3,7 @@ import { Compass, Target, HeartHandshake, ShieldCheck, ArrowRight } from "lucide
 import { Section, SectionHeading } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 
-const TITLE = "About PrarohTech — Our Story, Vision and Team";
+const TITLE = "About PrarohTech — Practical Technology Solutions";
 const DESCRIPTION =
   "Learn about PrarohTech, a growing technology services company focused on practical software, web, AI and cloud solutions for businesses.";
 

@@ -110,7 +110,7 @@ function Careers() {
             </button>
             {submitted ? (
               <p role="status" className="text-sm text-brand">
-                Thanks — your expression of interest has been received.
+                This form is not connected yet. Please email info@prarohtech.com to share your interest.
               </p>
             ) : null}
           </form>

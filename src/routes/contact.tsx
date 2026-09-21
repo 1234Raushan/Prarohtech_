@@ -17,6 +17,8 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:url", content: "/contact" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
   }),
@@ -75,7 +77,7 @@ function Contact() {
             </button>
             {sent ? (
               <p role="status" className="text-sm text-brand">
-                Thanks — your message has been received.
+                This form is not connected yet. Please email info@prarohtech.com to send your enquiry.
               </p>
             ) : null}
           </form>
