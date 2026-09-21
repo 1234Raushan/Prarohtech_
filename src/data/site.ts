@@ -17,7 +17,7 @@ export const company = {
   tagline: "Software, AI & Cloud Solutions",
   website: "https://prarohtech.com",
   email: "info@prarohtech.com",
-  address: "Shiv Shakti Enclave, Gali No. 7,Gali No. 07, Gautam Buddha Nagar, Uttar Pradesh – 201305, India",
+  address: "Shiv Shakti Enclave, Gali No. 07, Gautam Buddha Nagar, Uttar Pradesh – 201305, India",
 };
 
 export type Service = {
@@ -102,11 +102,11 @@ export const services: Service[] = [
 ];
 
 export const processSteps = [
-  { title: "Plan", text: "Discovery workshops, scope, success metrics and a costed roadmap." },
-  { title: "Design", text: "Experience design, architecture and a clickable prototype." },
-  { title: "Develop", text: "Two-week sprints, automated testing and transparent demos." },
-  { title: "Deploy", text: "CI/CD, cloud hardening, performance and security sign-off." },
-  { title: "Support", text: "SLA-backed monitoring, iteration and continuous improvement." },
+  { title: "Plan", text: "Understand the requirements, priorities, constraints and appropriate scope." },
+  { title: "Design", text: "Define the user experience, architecture and technical approach." },
+  { title: "Develop", text: "Build in clear stages with testing, reviews and visible progress." },
+  { title: "Deploy", text: "Prepare the solution, infrastructure and release process for launch." },
+  { title: "Support", text: "Discuss suitable options for maintenance, updates and ongoing improvement." },
 ];
 
 export const technologies = [
@@ -133,37 +133,6 @@ export const industries = [
   "Energy & Utilities",
 ];
 
-<<<<<<< HEAD
-const stats = [
-  { value: "Custom", label: "Software Solutions" },
-  { value: "AI", label: "Business Automation" },
-  { value: ".NET", label: "Development Expertise" },
-  { value: "Cloud", label: "Modern Infrastructure" },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "PrarohTech rebuilt our core lending platform in nine months. Throughput tripled and our release cycle went from quarterly to weekly.",
-    name: "Ananya Rao",
-    role: "CTO, Northbridge Finance",
-  },
-  {
-    quote:
-      "Their AI team shipped a document-processing copilot that removed 4,000 manual hours a year. Measured, pragmatic, no hype.",
-    name: "Marcus Lehmann",
-    role: "COO, Vantage Logistics",
-  },
-  {
-    quote:
-      "The ERP rollout across six plants was the smoothest enterprise programme we have run. Communication was flawless.",
-    name: "Priya Menon",
-    role: "VP Operations, Suryan Industries",
-  },
-];
-
-=======
->>>>>>> e468481a248c659defd04f9974a6af652f68dad1
 export const faqs = [
   {
     q: "How do engagements typically start?",
@@ -171,11 +140,11 @@ export const faqs = [
   },
   {
     q: "Do you work fixed-price or time-and-materials?",
-    a: "Both. Well-defined scopes run fixed-price with milestone billing; evolving products run as dedicated squads billed monthly.",
+    a: "The engagement model depends on the scope and how defined the requirements are. Suitable commercial options can be discussed during planning.",
   },
   {
     q: "Who owns the intellectual property?",
-    a: "You do — source code, infrastructure definitions and documentation transfer to you on payment of each milestone.",
+    a: "Ownership, licensing and handover terms are agreed in writing for each engagement before work begins.",
   },
   {
     q: "How do you handle security and compliance?",
@@ -183,43 +152,43 @@ export const faqs = [
   },
   {
     q: "Can you take over an existing codebase?",
-    a: "Yes. We start with a technical audit, stabilise the build and test pipeline, then plan incremental modernisation.",
+    a: "Existing applications can be reviewed to understand their condition, risks and suitable maintenance or modernisation options.",
   },
 ];
 
 export const posts = [
   {
     slug: "shipping-ai-copilots",
-    title: "Shipping AI copilots that survive contact with production",
+    title: "Planning dependable AI copilots",
     category: "AI",
     date: "2026-06-18",
     excerpt:
-      "Evaluation harnesses, retrieval hygiene and guardrails — the unglamorous work that separates a demo from a dependable copilot.",
+      "Key considerations for evaluation, retrieval quality, safeguards and maintainability when planning an AI copilot.",
     read: "8 min read",
   },
   {
     slug: "dotnet-modernisation",
-    title: "A pragmatic path from .NET Framework to .NET 9",
+    title: "Planning a .NET modernisation path",
     category: ".NET",
     date: "2026-05-30",
     excerpt:
-      "Strangler-fig migration, shared authentication and how to keep releasing features while the platform moves underneath you.",
+      "Ways to assess legacy applications, phase migration work and manage dependencies during modernisation.",
     read: "10 min read",
   },
   {
     slug: "angular-performance",
-    title: "Angular signals and the end of change-detection guesswork",
+    title: "Understanding Angular signals and performance",
     category: "Angular",
     date: "2026-05-02",
-    excerpt: "How zoneless Angular and signal-based stores cut interaction latency on a 300-screen enterprise app.",
+    excerpt: "A practical look at signals, zoneless change detection and state choices for responsive Angular applications.",
     read: "7 min read",
   },
   {
     slug: "cloud-cost",
-    title: "Cutting cloud spend 41% without touching the roadmap",
+    title: "A practical approach to reviewing cloud costs",
     category: "Cloud",
     date: "2026-04-11",
-    excerpt: "Right-sizing, storage tiering and the scheduling changes that paid for an entire platform team.",
+    excerpt: "Areas to review when assessing cloud usage, including sizing, storage tiers, schedules and monitoring.",
     read: "6 min read",
   },
   {
@@ -227,7 +196,7 @@ export const posts = [
     title: "How to pick the first process to automate",
     category: "Business",
     date: "2026-03-19",
-    excerpt: "A scoring model for volume, variance and value — so your first automation win funds the next five.",
+    excerpt: "A simple framework for comparing process volume, variation, effort and business value before automating.",
     read: "5 min read",
   },
   {
@@ -235,7 +204,7 @@ export const posts = [
     title: "Design systems for enterprise software teams",
     category: "Business",
     date: "2026-02-27",
-    excerpt: "Tokens, governance and adoption metrics that stop a design system becoming shelfware.",
+    excerpt: "How tokens, governance and adoption practices can support a maintainable design system.",
     read: "9 min read",
   },
 ];

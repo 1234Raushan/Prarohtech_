@@ -46,7 +46,7 @@ function Services() {
         <Reveal className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand">Services</p>
           <h1 className="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
-            Ten capabilities. One accountable team.
+            Ten practical technology capabilities
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
              Choose support for a focused need or a broader delivery programme. We shape the approach around your goals,
